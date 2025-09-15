@@ -57,34 +57,38 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(39, 25);
+            this.lblTitle.Location = new System.Drawing.Point(29, 20);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(184, 24);
+            this.lblTitle.Size = new System.Drawing.Size(149, 18);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Registro de animal";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(17, 37);
+            this.lblNombre.Location = new System.Drawing.Point(13, 30);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(59, 16);
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(123, 37);
+            this.txtNombre.Location = new System.Drawing.Point(92, 30);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(273, 22);
+            this.txtNombre.Size = new System.Drawing.Size(206, 20);
             this.txtNombre.TabIndex = 2;
             // 
             // lblTipoAnimal
             // 
             this.lblTipoAnimal.AutoSize = true;
-            this.lblTipoAnimal.Location = new System.Drawing.Point(17, 79);
+            this.lblTipoAnimal.Location = new System.Drawing.Point(13, 64);
+            this.lblTipoAnimal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipoAnimal.Name = "lblTipoAnimal";
-            this.lblTipoAnimal.Size = new System.Drawing.Size(38, 16);
+            this.lblTipoAnimal.Size = new System.Drawing.Size(31, 13);
             this.lblTipoAnimal.TabIndex = 3;
             this.lblTipoAnimal.Text = "Tipo:";
             // 
@@ -98,93 +102,104 @@
             "Pez",
             "Reptil",
             "Insecto"});
-            this.cboTipoAnimal.Location = new System.Drawing.Point(123, 76);
+            this.cboTipoAnimal.Location = new System.Drawing.Point(92, 62);
+            this.cboTipoAnimal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboTipoAnimal.Name = "cboTipoAnimal";
-            this.cboTipoAnimal.Size = new System.Drawing.Size(273, 24);
+            this.cboTipoAnimal.Size = new System.Drawing.Size(206, 21);
             this.cboTipoAnimal.TabIndex = 4;
             this.cboTipoAnimal.SelectedIndexChanged += new System.EventHandler(this.cboTipoAnimal_SelectedIndexChanged);
             // 
             // lblEdad
             // 
             this.lblEdad.AutoSize = true;
-            this.lblEdad.Location = new System.Drawing.Point(435, 40);
+            this.lblEdad.Location = new System.Drawing.Point(326, 32);
+            this.lblEdad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(43, 16);
+            this.lblEdad.Size = new System.Drawing.Size(35, 13);
             this.lblEdad.TabIndex = 5;
             this.lblEdad.Text = "Edad:";
             // 
             // lblEspecie
             // 
             this.lblEspecie.AutoSize = true;
-            this.lblEspecie.Location = new System.Drawing.Point(16, 119);
+            this.lblEspecie.Location = new System.Drawing.Point(12, 97);
+            this.lblEspecie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEspecie.Name = "lblEspecie";
-            this.lblEspecie.Size = new System.Drawing.Size(60, 16);
+            this.lblEspecie.Size = new System.Drawing.Size(48, 13);
             this.lblEspecie.TabIndex = 6;
             this.lblEspecie.Text = "Especie:";
             // 
             // lblRaza
             // 
             this.lblRaza.AutoSize = true;
-            this.lblRaza.Location = new System.Drawing.Point(17, 161);
+            this.lblRaza.Location = new System.Drawing.Point(13, 131);
+            this.lblRaza.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRaza.Name = "lblRaza";
-            this.lblRaza.Size = new System.Drawing.Size(42, 16);
+            this.lblRaza.Size = new System.Drawing.Size(35, 13);
             this.lblRaza.TabIndex = 7;
             this.lblRaza.Text = "Raza:";
             // 
             // txtRaza
             // 
-            this.txtRaza.Location = new System.Drawing.Point(123, 161);
+            this.txtRaza.Location = new System.Drawing.Point(92, 131);
+            this.txtRaza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRaza.Name = "txtRaza";
-            this.txtRaza.Size = new System.Drawing.Size(273, 22);
+            this.txtRaza.Size = new System.Drawing.Size(206, 20);
             this.txtRaza.TabIndex = 8;
             // 
             // txtEspecie
             // 
-            this.txtEspecie.Location = new System.Drawing.Point(123, 119);
+            this.txtEspecie.Location = new System.Drawing.Point(92, 97);
+            this.txtEspecie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEspecie.Name = "txtEspecie";
-            this.txtEspecie.Size = new System.Drawing.Size(273, 22);
+            this.txtEspecie.Size = new System.Drawing.Size(206, 20);
             this.txtEspecie.TabIndex = 9;
             // 
             // nudEdad
             // 
-            this.nudEdad.Location = new System.Drawing.Point(533, 35);
+            this.nudEdad.Location = new System.Drawing.Point(400, 28);
+            this.nudEdad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nudEdad.Name = "nudEdad";
-            this.nudEdad.Size = new System.Drawing.Size(120, 22);
+            this.nudEdad.Size = new System.Drawing.Size(90, 20);
             this.nudEdad.TabIndex = 10;
             this.nudEdad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblSonido
             // 
             this.lblSonido.AutoSize = true;
-            this.lblSonido.Location = new System.Drawing.Point(435, 79);
+            this.lblSonido.Location = new System.Drawing.Point(326, 64);
+            this.lblSonido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSonido.Name = "lblSonido";
-            this.lblSonido.Size = new System.Drawing.Size(53, 16);
+            this.lblSonido.Size = new System.Drawing.Size(43, 13);
             this.lblSonido.TabIndex = 13;
             this.lblSonido.Text = "Sonido:";
             // 
             // lblAlimento
             // 
             this.lblAlimento.AutoSize = true;
-            this.lblAlimento.Location = new System.Drawing.Point(435, 161);
+            this.lblAlimento.Location = new System.Drawing.Point(326, 131);
+            this.lblAlimento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAlimento.Name = "lblAlimento";
-            this.lblAlimento.Size = new System.Drawing.Size(62, 16);
+            this.lblAlimento.Size = new System.Drawing.Size(50, 13);
             this.lblAlimento.TabIndex = 12;
             this.lblAlimento.Text = "Alimento:";
             // 
             // lblTipoAlimentacion
             // 
             this.lblTipoAlimentacion.AutoSize = true;
-            this.lblTipoAlimentacion.Location = new System.Drawing.Point(435, 119);
+            this.lblTipoAlimentacion.Location = new System.Drawing.Point(326, 97);
+            this.lblTipoAlimentacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipoAlimentacion.Name = "lblTipoAlimentacion";
-            this.lblTipoAlimentacion.Size = new System.Drawing.Size(92, 16);
+            this.lblTipoAlimentacion.Size = new System.Drawing.Size(73, 13);
             this.lblTipoAlimentacion.TabIndex = 11;
             this.lblTipoAlimentacion.Text = "Tipo alimento:";
             // 
             // txtSonido
             // 
-            this.txtSonido.Location = new System.Drawing.Point(533, 73);
+            this.txtSonido.Location = new System.Drawing.Point(400, 59);
+            this.txtSonido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSonido.Name = "txtSonido";
-            this.txtSonido.Size = new System.Drawing.Size(273, 22);
+            this.txtSonido.Size = new System.Drawing.Size(206, 20);
             this.txtSonido.TabIndex = 15;
             // 
             // cboTipoAlimentacion
@@ -196,17 +211,19 @@
             "Carnivoro",
             "Insectivoro",
             "Omnivoro"});
-            this.cboTipoAlimentacion.Location = new System.Drawing.Point(533, 116);
+            this.cboTipoAlimentacion.Location = new System.Drawing.Point(400, 94);
+            this.cboTipoAlimentacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboTipoAlimentacion.Name = "cboTipoAlimentacion";
-            this.cboTipoAlimentacion.Size = new System.Drawing.Size(273, 24);
+            this.cboTipoAlimentacion.Size = new System.Drawing.Size(206, 21);
             this.cboTipoAlimentacion.TabIndex = 14;
             // 
             // txtAlimento
             // 
-            this.txtAlimento.Location = new System.Drawing.Point(533, 158);
+            this.txtAlimento.Location = new System.Drawing.Point(400, 128);
+            this.txtAlimento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAlimento.Multiline = true;
             this.txtAlimento.Name = "txtAlimento";
-            this.txtAlimento.Size = new System.Drawing.Size(273, 160);
+            this.txtAlimento.Size = new System.Drawing.Size(206, 131);
             this.txtAlimento.TabIndex = 16;
             // 
             // grbDatosAnimal
@@ -227,9 +244,11 @@
             this.grbDatosAnimal.Controls.Add(this.lblRaza);
             this.grbDatosAnimal.Controls.Add(this.txtEspecie);
             this.grbDatosAnimal.Controls.Add(this.txtRaza);
-            this.grbDatosAnimal.Location = new System.Drawing.Point(43, 65);
+            this.grbDatosAnimal.Location = new System.Drawing.Point(32, 53);
+            this.grbDatosAnimal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grbDatosAnimal.Name = "grbDatosAnimal";
-            this.grbDatosAnimal.Size = new System.Drawing.Size(869, 343);
+            this.grbDatosAnimal.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbDatosAnimal.Size = new System.Drawing.Size(652, 279);
             this.grbDatosAnimal.TabIndex = 17;
             this.grbDatosAnimal.TabStop = false;
             this.grbDatosAnimal.Text = "Datos animal";
@@ -238,9 +257,10 @@
             // 
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuardar.Location = new System.Drawing.Point(197, 428);
+            this.BtnGuardar.Location = new System.Drawing.Point(148, 348);
+            this.BtnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(139, 43);
+            this.BtnGuardar.Size = new System.Drawing.Size(104, 35);
             this.BtnGuardar.TabIndex = 18;
             this.BtnGuardar.Text = "&Guardar";
             this.BtnGuardar.UseVisualStyleBackColor = true;
@@ -250,9 +270,10 @@
             // 
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(392, 428);
+            this.btnLimpiar.Location = new System.Drawing.Point(294, 348);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(139, 43);
+            this.btnLimpiar.Size = new System.Drawing.Size(104, 35);
             this.btnLimpiar.TabIndex = 19;
             this.btnLimpiar.Text = "&Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -262,9 +283,10 @@
             // 
             this.BtnVerDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVerDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVerDatos.Location = new System.Drawing.Point(592, 428);
+            this.BtnVerDatos.Location = new System.Drawing.Point(444, 348);
+            this.BtnVerDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnVerDatos.Name = "BtnVerDatos";
-            this.BtnVerDatos.Size = new System.Drawing.Size(139, 43);
+            this.BtnVerDatos.Size = new System.Drawing.Size(104, 35);
             this.BtnVerDatos.TabIndex = 20;
             this.BtnVerDatos.Text = "Ver datos";
             this.BtnVerDatos.UseVisualStyleBackColor = true;
@@ -272,16 +294,17 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 502);
+            this.ClientSize = new System.Drawing.Size(718, 408);
             this.Controls.Add(this.BtnVerDatos);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.grbDatosAnimal);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Alta de animales";
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).EndInit();
             this.grbDatosAnimal.ResumeLayout(false);
