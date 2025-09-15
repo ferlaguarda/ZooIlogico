@@ -281,7 +281,7 @@
             this.Controls.Add(this.grbDatosAnimal);
             this.Controls.Add(this.lblTitle);
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Alta de animales";
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).EndInit();
             this.grbDatosAnimal.ResumeLayout(false);
