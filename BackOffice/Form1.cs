@@ -64,7 +64,7 @@ namespace BackOffice
             var raza = txtRaza.Text;
             var sonido = txtSonido.Text;
             var alimento = txtAlimento.Text;
-            var especie = txtEspecie.Text;
+            var especie = txtEspecie.Text; 
             var edad = (int)nudEdad.Value;
             var tipoAnimal = (Animales.TipoAnimal)cboTipoAnimal.SelectedIndex;
             var tipoAlimentacion = (Animales.TipoAlimentacion)cboTipoAlimentacion.SelectedIndex;
