@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Animales\Animales.csproj" />
+    <ProjectReference Include="..\CommonEntities\CommonEntities.csproj" />
+    <ProjectReference Include="..\FileAccess\FileAccess.csproj" />
   </ItemGroup>
 
 </Project>
