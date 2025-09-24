@@ -10,6 +10,11 @@ namespace NetFrameworkConsole
     {
         static void Main(string[] args)
         {
+            PruebaConArchivos();
+        }
+    
+        static void PruebaConArchivos()
+        {
             //Forma 1 de declarar y almacenar en una lista
             List<Persona> personas = new List<Persona>
 {
@@ -43,5 +48,6 @@ namespace NetFrameworkConsole
             Console.WriteLine("Lectura finalizada !!!!");
             Console.ReadLine();
         }
+    
     }
 }

@@ -29,7 +29,8 @@ namespace FileAccess
                 {
                     Id = int.Parse(partes[0]),
                     Nombre = partes[1],
-                    Edad = int.Parse(partes[2])
+                    Apellido = partes[2],
+                    FechaNacimiento = DateTime.Parse(partes[3])
                 };
                 datos.Add(persona);
             }

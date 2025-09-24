@@ -1,11 +1,8 @@
 ﻿using CommonEntities.Entidades;
 using CommonEntities.Interfaces;
-using System;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
-using System.Runtime.Serialization.Json;
-using System.Text;
-using System.Text.Json;
 
 namespace FileAccess
 {
@@ -13,14 +10,18 @@ namespace FileAccess
     {
         public void Guardar(string ruta, List<Persona> datos)
         {
-            string json = JsonSerializer.Serialize(datos);
+            string json = JsonConvert.SerializeObject(datos);
             File.WriteAllText(ruta, json);
         }
 
         public List<Persona> Leer(string ruta)
         {
             string json = File.ReadAllText(ruta);
-            return JsonSerializer.Deserialize<List<Persona>>(json);
+            if (!string.IsNullOrEmpty(json))
+            {
+                return JsonConvert.DeserializeObject<List<Persona>>(json)!; 
+            }
+            return new List<Persona>();
         }
     }
 }
