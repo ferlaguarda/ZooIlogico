@@ -9,9 +9,4 @@ namespace CommonEntities.Interfaces
         List<Persona> Leer(string ruta);
     }
 
-    public interface IRepositorio<T>
-    {
-        void Guardar(string ruta, List<T> datos);
-        List<T> Leer(string ruta);
-    }
 }

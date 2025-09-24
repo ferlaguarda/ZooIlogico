@@ -4,9 +4,13 @@ using CommonEntities.Interfaces;
 using FileAccess;
 
 //Forma 1 de declarar y almacenar en una lista
+UsuarioBO usuario = new UsuarioBO("pepito", "Juan", "Fortito", "admin1234", "usuario@gmail.com");
+List<UsuarioBO> usuarios = new List<UsuarioBO>();
+usuarios.Add(usuario);
+IGenericFileManager<UsuarioBO> jsonManager = new GenericJasonManager<UsuarioBO>();
+jsonManager.Guardar("usuariosBO.json", usuarios);
 
-
-PruebaConAcrchivos();
+//PruebaConAcrchivos();
 
 static void PruebaConAcrchivos()
 {
