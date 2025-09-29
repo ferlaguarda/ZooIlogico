@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AuthenicationLogic;
+using CommonEntities.Interfaces;
+using System;
 using System.Windows.Forms;
 
 namespace BackOffice
@@ -21,15 +16,30 @@ namespace BackOffice
         {
             string usuario = txtUsuario.Text;
             string password = txtPassword.Text;
-            if (usuario == "admin" && password == "password")
+            IAuthentication auth = new FileAccess();
+            try
             {
-                Principal mainForm = new Principal();
-                mainForm.Show();
-                this.Hide();
+                if(auth.Login(usuario, password))
+                {
+                    Principal mainForm = new Principal();
+                    mainForm.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show($"Las credenciales de acceso no son validas.",
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }                   
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Usuario o contraseña incorrectos.", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"{ex.Message}", 
+                    "Error", 
+                    MessageBoxButtons.OK, 
+                    MessageBoxIcon.Error);
+                return;
             }
         }
     }

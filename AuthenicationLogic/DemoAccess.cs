@@ -1,4 +1,6 @@
-﻿using CommonEntities.Interfaces;
+﻿using CommonEntities.Entidades;
+using CommonEntities.Entidades.Exceptions;
+using CommonEntities.Interfaces;
 using System;
 
 namespace AuthenicationLogic
@@ -7,7 +9,14 @@ namespace AuthenicationLogic
     {
         public bool Login(string username, string password)
         {
-            throw new NotImplementedException();
+            if(string.IsNullOrEmpty(username))
+                throw new AuthenticationException("Por favor ingrese su nombre de usuario.");
+            if(string.IsNullOrEmpty(password))
+                throw new AuthenticationException("Por favor ingrese su contraseña.");
+
+            if (username == "admin" && password == "password")
+                return true;
+            return false;
         }
 
         public void Logout()

@@ -33,6 +33,12 @@ namespace CommonEntities.Entidades
             FechaCreacion = DateTime.Now;
             IsActive = true;
         }
+
+        public UsuarioBO()
+        {
+            // Constructor por defecto
+        }
+
         public override string ToString()
         {
             return $"{ Apellido}, { Nombre}";

@@ -8,8 +8,9 @@ UsuarioBO usuario = new UsuarioBO("pepito", "Juan", "Fortito", "admin1234", "usu
 List<UsuarioBO> usuarios = new List<UsuarioBO>();
 usuarios.Add(usuario);
 IGenericFileManager<UsuarioBO> jsonManager = new GenericJasonManager<UsuarioBO>();
-jsonManager.Guardar("usuariosBO.json", usuarios);
-
+IGenericFileManager<UsuarioBO> xmlManager = new GenericXmlManager<UsuarioBO>();
+jsonManager.Guardar("C:\\Temporal\\Progg2\\usuariosBO.json", usuarios);
+xmlManager.Guardar("C:\\Temporal\\Progg2\\usuariosBO.xml", usuarios);
 //PruebaConAcrchivos();
 
 static void PruebaConAcrchivos()
