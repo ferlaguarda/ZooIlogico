@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4F343F79-A3A0-4006-B17A-FBE55C7030F6}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>NetFrameworkConsole</RootNamespace>
-    <AssemblyName>NetFrameworkConsole</AssemblyName>
+    <ProjectGuid>{F49245CD-4989-4694-89C2-B3AD0CA5BE8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FileManagerNerF</RootNamespace>
+    <AssemblyName>FileManagerNerF</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,24 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="TextManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Animales\Animales.csproj">
-      <Project>{BBE7D930-660F-42C5-A775-8E58282B6391}</Project>
-      <Name>Animales</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CommonEntitiesNetF\CommonEntitiesNetF.csproj">
       <Project>{C2E5A0BE-2D22-4629-B3AF-306EE9665043}</Project>
       <Name>CommonEntitiesNetF</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FileManagerNerF\FileManagerNerF.csproj">
-      <Project>{F49245CD-4989-4694-89C2-B3AD0CA5BE8D}</Project>
-      <Name>FileManagerNerF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

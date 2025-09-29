@@ -102,6 +102,14 @@
       <Project>{BBE7D930-660F-42C5-A775-8E58282B6391}</Project>
       <Name>Animales</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AuthenicationLogic\AuthenicationLogic.csproj">
+      <Project>{ACB5DDAE-B4A4-4919-B3A4-ABA5B4FFF105}</Project>
+      <Name>AuthenicationLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonEntities\CommonEntities.csproj">
+      <Project>{8D9D32ED-9784-4379-B8B8-DB177E87F165}</Project>
+      <Name>CommonEntities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
