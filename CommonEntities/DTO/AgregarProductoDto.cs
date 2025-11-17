@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace CommonEntities.DTO
 {
     public class AgregarProductoDto
     {
-        [Required, StringLength(100)]
+        [Required]
+        [StringLength(100)]
         public string Nombre { get; set; } = string.Empty;
 
         [Range(0.01, 9999.99)]

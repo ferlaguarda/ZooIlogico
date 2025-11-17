@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [usuario_demo]
+    WITH PASSWORD = N'upc|KydejrlMXovpjyYs@nexmsFT7_&#$!~<ktbxkyI2ptpI', SID = 0xEC162F3B35268C4D8865E15ECDA6BEC4, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManagerNerF", "FileMana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{A4D9C80C-E4AE-4878-B29C-6A72C5A3D5A1}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pruebita", "Pruebita\Pruebita.sqlproj", "{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,12 @@ Global
 		{A4D9C80C-E4AE-4878-B29C-6A72C5A3D5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D9C80C-E4AE-4878-B29C-6A72C5A3D5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D9C80C-E4AE-4878-B29C-6A72C5A3D5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
