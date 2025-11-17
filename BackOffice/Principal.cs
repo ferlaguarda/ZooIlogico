@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BackOffice.Usuarios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,13 @@ namespace BackOffice
             mantenimientoAnimalesForm.MdiParent = this;
             mantenimientoAnimalesForm.Show();
 
+        }
+
+        private void miMantenimientoUsuarios_Click(object sender, EventArgs e)
+        {
+            UsersGrid usersGridForm = new UsersGrid();
+            usersGridForm.MdiParent = this;
+            usersGridForm.Show();
         }
     }
 }

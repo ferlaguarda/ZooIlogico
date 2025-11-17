@@ -1,11 +1,10 @@
 ﻿using CommonEntities.Entidades;
-using CommonEntities.Entidades.Exceptions;
 using CommonEntities.Interfaces;
 using FileAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Security.Authentication;
 
 namespace AuthenicationLogic
 {
@@ -13,6 +12,7 @@ namespace AuthenicationLogic
     {
         public bool Login(string username, string password)
         {
+            UsuarioBO myUser = null;
             if (string.IsNullOrEmpty(username))
                 throw new AuthenticationException("Por favor ingrese su nombre de usuario.");
             if (string.IsNullOrEmpty(password))
@@ -26,15 +26,24 @@ namespace AuthenicationLogic
             foreach(UsuarioBO user in users)
             {
                 if(user.UserName == username && user.Password == password)
-                    return true;    
+                {
+                    user.UltimoAcceso = DateTime.Now;
+                    myUser = user;
+                    break;
+                }
             }
-
-            UsuarioBO userLamda = users
-                .Where(u => u.UserName == username && u.Password == password)
-                .FirstOrDefault();
-
-            if(userLamda != null)
+            if(myUser != null)
+            {
+                jsonManager.Guardar("C:\\Temporal\\Progg2\\usuariosBO.json", users);
                 return true;
+            }
+                
+            //UsuarioBO userLamda = users
+            //    .Where(u => u.UserName == username && u.Password == password)
+            //    .FirstOrDefault();
+
+            //if(userLamda != null)
+            //    return true;
 
             return false;
         }

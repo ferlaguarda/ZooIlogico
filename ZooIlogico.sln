@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonEntitiesNetF", "Commo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManagerNerF", "FileManagerNerF\FileManagerNerF.csproj", "{F49245CD-4989-4694-89C2-B3AD0CA5BE8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{A4D9C80C-E4AE-4878-B29C-6A72C5A3D5A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{F49245CD-4989-4694-89C2-B3AD0CA5BE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F49245CD-4989-4694-89C2-B3AD0CA5BE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F49245CD-4989-4694-89C2-B3AD0CA5BE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D9C80C-E4AE-4878-B29C-6A72C5A3D5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D9C80C-E4AE-4878-B29C-6A72C5A3D5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D9C80C-E4AE-4878-B29C-6A72C5A3D5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D9C80C-E4AE-4878-B29C-6A72C5A3D5A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -61,6 +61,7 @@
             this.miMantenimientoUsuarios.Name = "miMantenimientoUsuarios";
             this.miMantenimientoUsuarios.Size = new System.Drawing.Size(224, 26);
             this.miMantenimientoUsuarios.Text = "Mantenimiento";
+            this.miMantenimientoUsuarios.Click += new System.EventHandler(this.miMantenimientoUsuarios_Click);
             // 
             // tsmiAnimales
             // 
