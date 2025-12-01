@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csp
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pruebita", "Pruebita\Pruebita.sqlproj", "{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWebApplication", "MvcWebApplication\MvcWebApplication.csproj", "{6A668B72-B847-466F-9B67-38A0E1014909}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F391A397-A8AC-46A0-87A0-732DD1F0B7C9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6A668B72-B847-466F-9B67-38A0E1014909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A668B72-B847-466F-9B67-38A0E1014909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A668B72-B847-466F-9B67-38A0E1014909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A668B72-B847-466F-9B67-38A0E1014909}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

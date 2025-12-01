@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MvcWebApplication.Models.Producto>
+@{
+    ViewData["Title"] = "Listado de productos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a class="btn btn-primary"  asp-action="Create">Nuevo producto</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.First().Id)</th>
+            <th>@Html.DisplayNameFor(m => m.First().Nombre)</th>
+            <th>@Html.DisplayNameFor(m => m.First().Precio)</th>
+            <th>@Html.DisplayNameFor(m => m.First().Stock)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.Nombre</td>
+                <td>@p.Precio</td>
+                <td>@p.Stock</td>
+                <td>
+                    <a asp-action="Detail" asp-route-id="@p.Id">Detalles</a> |
+                    <a asp-action="Edit" asp-route-id="@p.Id">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@p.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
